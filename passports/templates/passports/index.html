@@ -1,0 +1,11 @@
+{% extends "passports/base.html" %} {% load static %}{% block title %} Passports
+{% endblock%} {% block content%}
+<div class="container">
+  <h1>Passports</h1>
+  <ul>
+    {% for passport in passports %}
+    <li>{{ passport.title }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %} {% block jsfiles %} {% endblock jsfiles %}

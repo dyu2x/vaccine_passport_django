@@ -1,0 +1,63 @@
+{% extends "facilities/base.html" %} {% load static %}{% block title %} NuCamp:
+Register {% endblock%} {% block content%}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active">Register</li>
+      </ol>
+      <h2>Login</h2>
+      <hr />
+    </div>
+  </div>
+  <div class="row row-content">
+    <form method="post" class="form-group">
+      <div class="form-group row">
+        <label for="firstname" class="col-md-4 col-form-label">Name</label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="address" class="col-md-4 col-form-label">Address</label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="address" name="address" placeholder="Address" />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="code" class="col-md-4 col-form-label">Code</label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="code" name="code" placeholder="Code" />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="password" class="col-md-4 col-form-label">Password</label>
+        <div class="col-md-8">
+          <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="address" class="col-md-4 col-form-label">Address</label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="address" name="address" placeholder="Address" />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="provider" class="col-md-4 col-form-label">Provider</label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="provider" name="provider" placeholder="Provider" />
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-md-4 col-md-8">
+          <button type="submit" class="btn btn-primary" value="Register">
+            Register
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %} {% block jsfiles %} {% endblock jsfiles %}
